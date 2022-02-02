@@ -214,6 +214,12 @@
                  </p>
                  <a class="btn btn-default abstract" ptitle="Can a generative model be trained to produce images from a specific domain, guided by a text prompt only, without seeing any image? In other words: can an image generator be trained blindly? Leveraging the semantic power of large scale Contrastive-Language-Image-Pre-training (CLIP) models, we present a text-driven method that allows shifting a generative model to new domains, without having to collect even a single image from those domains. We show that through natural language prompts and a few minutes of training, our method can adapt a generator across a multitude of domains characterized by diverse styles and shapes. Notably, many of these modifications would be difficult or outright impossible to reach with existing methods. We conduct an extensive set of experiments and comparisons across a wide range of domains. These demonstrate the effectiveness of our approach and show that our shifted models maintain the latent-space properties that make generative models appealing for downstream tasks."> Abstract</a>
                  <a href="https://arxiv.org/abs/2108.00946" class="btn btn-default">Paper </a>
+                 <a href="https://github.com/rinongal/StyleGAN-nada" class="btn btn-default">Code </a>
+                 <a href="https://replicate.com/rinongal/stylegan-nada" class="btn btn-default">Interactive demo </a>
+
+
+
+
              </div>
 
       </div><!-- end of row -->
@@ -237,6 +243,8 @@
                  </p>
                  <a class="btn btn-default abstract" ptitle="Existing deep methods produce highly accurate 3D reconstructions in stereo and multiview stereo settings, i.e., when cameras are both internally and externally calibrated. Nevertheless, the challenge of simultaneous recovery of camera poses and 3D scene structure in multiview settings with deep networks is still outstanding. Inspired by projective factorization for Structure from Motion (SFM) and by deep matrix completion techniques, we propose a neural network architecture that, given a set of point tracks in multiple images of a static scene, recovers both the camera parameters and a (sparse) scene structure by minimizing an unsupervised reprojection loss. Our network architecture is designed to respect the structure of the problem: the sought output is equivariant to permutations of both cameras and scene points. Notably, our method does not require initialization of camera parameters or 3D point locations. We test our architecture in two setups: (1) single scene reconstruction and (2) learning from multiple scenes. Our experiments, conducted on a variety of datasets in both internally calibrated and uncalibrated settings, indicate that our method accurately recovers pose and structure, on par with classical state of the art methods. Additionally, we show that a pre-trained network can be used to reconstruct novel scenes using inexpensive fine-tuning with no loss of accuracy."> Abstract</a>
                  <a href="https://arxiv.org/pdf/2104.06703.pdf" class="btn btn-default">Paper </a>
+                 <a href="https://github.com/drormoran/Equivariant-SFM" class="btn btn-default">Code </a>
+
              </div>
 
       </div><!-- end of row -->
@@ -276,6 +284,8 @@
                  </p>
                  <a class="btn btn-default abstract" ptitle="Neural networks (NNs) have been widely applied in speech processing tasks, and, in particular, those employing microphone arrays. Nevertheless, most of the existing NN architectures can only deal with fixed and position-specific microphones arrays. In this paper, we present an NN architecture that is able to cope with microphone arrays on which no prior knowledge is presumed, and demonstrate its applicability on the speech dereverberation problem. To this end, our approach harnesses recent advances in the Deep Sets framework \cite{zaheer,sets} to design an architecture that enhances the reveberant log-spectrum. We provide a setup for training and testing such a network. Our experiments, using REVERB challenge datasets,  show that the proposed position-agnostic setup performs comparably with the position-aware framework and sometimes slightly better, even with less microphones. In addition, it substantially improves performance over the closest single microphone architecture. "> Abstract</a>
                  <a href="https://arxiv.org/pdf/2010.11875.pdf" class="btn btn-default">Paper </a>
+                 <a href="https://github.com/yochaiye/scene_agnostic_dereverberation" class="btn btn-default">Code </a>
+
              </div>
 
       </div><!-- end of row -->
@@ -462,7 +472,7 @@ Abstract. Self-supervised learning (SSL) allows to learn useful repre- sentation
               <a class="btn btn-default abstract" ptitle="Efficient numerical solvers for sparse linear systems are crucial in science and engineering. One of the fastest methods for solving large-scale sparse linear systems is algebraic multigrid (AMG). The main challenge in the construction of AMG algorithms is the selection of the prolongation operator--a problem-dependent sparse matrix which governs the multiscale hierarchy of the solver and is critical to its efficiency. Over many years, numerous methods have been developed for this task, and yet there is no known single right answer except in very special cases. Here we propose a framework for learning AMG prolongation operators for linear systems with sparse symmetric positive (semi-) definite matrices. We train a single graph neural network to learn a mapping from an entire class of such matrices to prolongation operators, using an efficient unsupervised loss function. Experiments on a broad class of problems demonstrate improved convergence rates compared to classical AMG, demonstrating the potential utility of neural networks for developing sparse system solvers."> Abstract</a>
               <a href="https://arxiv.org/pdf/2003.05744" class="btn btn-default">Paper </a>
               <a href="https://icml.cc/virtual/2020/poster/6369" class="btn btn-default">Video+Slides</a>
-
+              <a href="https://github.com/ilayluz/learning-amg" class="btn btn-default">Code</a>
           </div>
   </div><!-- end of row -->
 
