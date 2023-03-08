@@ -73,7 +73,7 @@
           My CV can be found <a href="cv.pdf">here</a>.
 
           <h4>Prospective students:</h4>
-          I am seeking highly motivated Ph.D. students to join my new lab at the Technion. My research combines machine learning, algebra, and some aspects of graph theory, so knowledge and/or interest in these fields are a big plus.
+          I am seeking highly motivated Ph.D. students to join my new lab at the Technion. My research combines machine learning, and some aspects of algebra and graph theory, so knowledge and/or interest in these fields are a big plus.
           Coding skills are also required. You can get an idea of what I am working on by taking a look at these two recent talks I gave:
           <ul>
           <li><a href='https://library.cirm-math.fr/Record.htm?idlist=1&record=19280739124910089119'>Subgraph-based networks for expressive, efficient, and domain-independent graph learning </a></li>
@@ -93,7 +93,7 @@
                 <p>
                 <h4>News</h4>
                 <ul>
-
+                <li> I will serve as an area chair at NeurIPS 2023./li>
                 <li> A recent <a href='https://explainable.podbean.com/e/%d7%a8%d7%a9%d7%aa%d7%95%d7%aa%d7%a0%d7%95%d7%99%d7%a8%d7%95%d7%a0%d7%99%d7%9d%d7%a2%d7%9c-%d7%92%d7%a8%d7%a4%d7%99%d7%9d-%d7%a2/?fbclid=IwAR2oz8wjYc0qSwIt2clNWrFeMzNJMvV5Ycop166V6p5ZSB0JYeHF8sEkghg
 '>podcast </a> with me on graph neural networks (hebrew)</li>
                 <li> See our recent tutorial on <a href='https://www.youtube.com/watch?v=ASQYjbUBYzs'>Exploring the practical and theoretical landscape of expressive graph neural networks </a> given at the <a href='https://logconference.org/'> Learning on Graphs Conference </a>. With With Fabrizio Frasca and Beatrice Bevilacqua. </li>
@@ -101,7 +101,7 @@
                 <li> Our paper <a href="https://arxiv.org/abs/2206.11140"> Understanding and Extending Subgraph GNNs by Rethinking Their Symmetries
 </a> was accepted as an <b>oral presentation</b> to NeurIPS2022</li>
                 <li> Our paper <a href="https://arxiv.org/abs/2110.02910"> Equivariant Subgraph Aggregation Networks</a> was accepted as a <b>spotlight presentation</b> to ICLR2022</li>
-                <li> A <a href="https://towardsdatascience.com/using-subgraphs-for-more-expressive-gnns-8d06418d5ab"> new blog post on subggraph GNNs</a> on Towards Data Science.</li>
+                <li> A <a href="https://towardsdatascience.com/using-subgraphs-for-more-expressive-gnns-8d06418d5ab"> new blog post on Subggraph GNNs</a> on Towards Data Science.</li>
                 <li> The Second <a href="https://gdl-israel.github.io/"> Israeli Workshop on Geometric Deep Learning</a> took place virtually on October 11th 2021. See full video recording <a href="https://youtu.be/aRWPSsDT9kk">here</a>.</li>
                 <li> Our paper <a href="https://arxiv.org/pdf/2104.06703.pdf">Deep Permutation Equivariant Structure from Motion</a> was accepted to ICCV 2021 as an <b>oral presentation</b>!</li>
                 <li> Two papers accepted to ICML 2021: <a href="https://arxiv.org/abs/2010.08853">From Local Structures to Size Generalization in Graph Neural Networks</a> and <a href="https://arxiv.org/abs/2010.05313">Controlling Graph Dynamics with  Reinforcement Learning and Graph Neural Networks</a>.</li>
@@ -110,7 +110,11 @@
                 <li>Our ICML 2020 paper <a href="https://arxiv.org/pdf/2002.08599">On Learning Sets of Symmetric Elements</a> received the <b>Outstanding paper award</b> (best paper award). See this <a href="https://aihub.org/2020/08/20/interview-with-haggai-maron-icml2020-award-winner/">interview</a> for more details.</li>
                 <li>July 2020: I am organizing the first <a href="https://gdl-israel.github.io/"> Israeli Workshop on Geometric Deep Learning</a> that will take place virtually on August 2nd 2020. See full video recording <a href="https://youtu.be/c8_32IVn-sg">here</a>.</li>
                 <li>June 2020: Two papers accepted to ICML 2020: <a href="https://arxiv.org/pdf/2002.08599">On Learning Sets of Symmetric Elements</a> and <a href="https://arxiv.org/pdf/2003.05744">Learning Algebraic Multigrid Using Graph Neural Networks</a>.</li>
+                <!--
+
                 <li>December 2019: We presented three papers at NeurIPS 2019: <a href="https://arxiv.org/abs/1905.11911">Controlling Neural Level Sets</a> and <a href="https://arxiv.org/abs/1905.11136">Provably Powerful Graph Networks</a> were presented in the main conference; <a href="projects/open_problems_igns/Open Problems Approximation Power of InvariantGraph Networks.pdf">Approximation Power of Invariant Graph Networks</a> was presented at the <a href="http://grlearning.github.io/">Graph Representation Learning Workshop</a>. </li>
+              -->
+
                 <!--
                 <li>October 2019: I have joined NVIDIA Research as a Research Scientist!</li>
                 -->
@@ -154,6 +158,88 @@
             <h1>Publications</h1>
         </div>
       </div>
+
+
+
+      <!--Open problems -->
+         <div class="row" id="templatemo_publications_LargeScaleBD">
+             <div class="col-md-1"></div>
+             <div class="col-md-5 col-sm-7 col-xs-24">
+                 <img src="projects/DWS/rep.png" width="300" " alt="">
+             </div>
+             <div class="col-md-1"></div>
+             <div class="col-md-16">
+                 <h2>Equivariant Architectures for Learning in Deep Weight Spaces</h2>
+                 <p>
+                   Aviv Navon, Aviv Shamsian, Idan Achituve, Ethan Fetaya, Gal Chechik, Haggai Maron<br>
+                   <i> Technical report 2023</i> <br>
+                 </p>
+                 <a class="btn btn-default abstract" ptitle="Designing machine learning architectures for processing neural networks in their raw weight matrix form is a newly introduced research direction. Unfortunately, the unique symmetry structure of deep weight spaces makes this design very challenging. If successful, such architectures would be capable of performing a wide range of intriguing tasks, from adapting a pre-trained network to a new domain to editing objects represented as functions (INRs or NeRFs). As a first step towards this goal, we present here a novel network architecture for learning in deep weight spaces. It takes as input a concatenation of weights and biases of a pre-trained MLP and processes it using a composition of layers that are equivariant to the natural permutation symmetry of the MLP's weights: Changing the order of neurons in intermediate layers of the MLP does not affect the function it represents. We provide a full characterization of all affine equivariant and invariant layers for these symmetries and show how these layers can be implemented using three basic operations: pooling, broadcasting, and fully connected layers applied to the input in an appropriate manner. We demonstrate the effectiveness of our architecture and its advantages over natural baselines in a variety of learning tasks."> Abstract</a>
+                 <a href="https://arxiv.org/abs/2301.12780" class="btn btn-default">Paper </a>
+             </div>
+           </div><!-- end of row -->
+
+      <!--Open problems -->
+         <div class="row" id="templatemo_publications_LargeScaleBD">
+             <div class="col-md-1"></div>
+             <div class="col-md-5 col-sm-7 col-xs-24">
+                 <img src="projects/RFP/rep.png" width="300" " alt="">
+             </div>
+             <div class="col-md-1"></div>
+             <div class="col-md-16">
+                 <h2>Graph Positional Encoding via Random Feature Propagation</h2>
+                 <p>
+                   Moshe Eliasof, Fabrizio Frasca, Beatrice Bevilacqua, Eran Treister, Gal Chechik, Haggai Maron<br>
+                   <i> Technical report 2023</i> <br>
+                 </p>
+                 <a class="btn btn-default abstract" ptitle="Two main families of node feature augmentation schemes have been explored for enhancing GNNs: random features and spectral positional encoding. Surprisingly, however, there is still no clear understanding of the relation between these two augmentation schemes. Here we propose a novel family of positional encoding schemes which draws a link between the above two approaches and improves over both. The new approach, named Random Feature Propagation (RFP), is inspired by the power iteration method and its generalizations. It concatenates several intermediate steps of an iterative algorithm for computing the dominant eigenvectors of a propagation matrix, starting from random node features. Notably, these propagation steps are based on graph-dependent propagation operators that can be either predefined or learned. We explore the theoretical and empirical benefits of RFP. First, we provide theoretical justifications for using random features, for incorporating early propagation steps, and for using multiple random initializations. Then, we empirically demonstrate that RFP significantly outperforms both spectral PE and random features in multiple node classification and graph classification benchmarks."> Abstract</a>
+                 <a href="https://arxiv.org/abs/2303.02918" class="btn btn-default">Paper </a>
+             </div>
+           </div><!-- end of row -->
+
+      <!--Open problems -->
+         <div class="row" id="templatemo_publications_LargeScaleBD">
+             <div class="col-md-1"></div>
+             <div class="col-md-5 col-sm-7 col-xs-24">
+                 <img src="projects/equipoly/rep.png" width="300" " alt="">
+             </div>
+             <div class="col-md-1"></div>
+             <div class="col-md-16">
+                 <h2>Equivariant Polynomials for Graph Neural Networks</h2>
+                 <p>
+                   Omri Puny, Derek Lim, Bobak T. Kiani, Haggai Maron, Yaron Lipman<br>
+                   <i> Technical report 2023 </i> <br>
+                 </p>
+                 <a class="btn btn-default abstract" ptitle="Graph Neural Networks (GNN) are inherently limited in their expressive power. Recent seminal works (Xu et al., 2019; Morris et al., 2019b) introduced the Weisfeiler-Lehman (WL) hierarchy as a measure of expressive power. Although this hierarchy has propelled significant advances in GNN analysis and architecture developments, it suffers from several significant limitations. These include a complex definition that lacks direct guidance for model improvement and a WL hierarchy that is too coarse to study current GNNs. This paper introduces an alternative expressive power hierarchy based on the ability of GNNs to calculate equivariant polynomials of a certain degree. As a first step, we provide a full characterization of all equivariant graph polynomials by introducing a concrete basis, significantly generalizing previous results. Each basis element corresponds to a specific multi-graph, and its computation over some graph data input corresponds to a tensor contraction problem. Second, we propose algorithmic tools for evaluating the expressiveness of GNNs using tensor contraction sequences, and calculate the expressive power of popular GNNs. Finally, we enhance the expressivity of common GNN architectures by adding polynomial features or additional operations / aggregations inspired by our theory. These enhanced GNNs demonstrate state-of-the-art results in experiments across multiple graph learning benchmarks."> Abstract</a>
+                 <a href="https://arxiv.org/abs/2302.11556" class="btn btn-default">Paper </a>
+             </div>
+           </div><!-- end of row -->
+
+
+      <!--Open problems -->
+         <div class="row" id="templatemo_publications_LargeScaleBD">
+             <div class="col-md-1"></div>
+             <div class="col-md-5 col-sm-7 col-xs-24">
+                 <img src="projects/signequi/rep.png" width="300" " alt="">
+             </div>
+             <div class="col-md-1"></div>
+             <div class="col-md-16">
+                 <h2>Expressive Sign Equivariant Networks for Spectral Geometric Learning</h2>
+                 <p>
+                   Derek Lim*, Joshua Robinson*, Stefanie Jegelka, Yaron Lipman, Haggai Maron<br>
+                   <i> ICLR 2023 Workshop on Physics for Machine Learning  </i> <br>
+                 </p>
+                 <a class="btn btn-default abstract" ptitle="Recent work has shown the utility of developing machine learning models that respect the symmetries of eigenvectors.
+These works promote sign invariance, since for any eigenvector $v$ the negation $-v$ is also an eigenvector.
+In this work, we demonstrate that sign \emph{equivariance} is useful for applications such as building orthogonally equivariant models and link prediction.
+To obtain these benefits, we develop novel sign equivariant neural network architectures. These models are based on our analytic characterization of the sign equivariant polynomials  and thus inherit provable expressiveness properties."> Abstract</a>
+                 <a href="" class="btn btn-default">Paper </a>
+
+
+             </div>
+           </div><!-- end of row -->
+
+
 
 
 
