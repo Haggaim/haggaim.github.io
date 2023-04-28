@@ -66,7 +66,7 @@
                 <h2>Haggai Maron</h2>
 				<p>
           I am a senior research scientist at <a href="https://www.nvidia.com/en-us/research/">NVIDIA Research</a> and a member of <a href="https://nv-research-tlv.netlify.app/">NVIDIA's TLV lab</a>.
-          I will be joining the <a href="https://vee.technion.ac.il/"> Faculty of Electrical and Computer Engineering at the Technion</a> as an Assistant Professor in 2023.
+          I am also an incoming Assistant Professor at the <a href="https://vee.technion.ac.il/"> Faculty of Electrical and Computer Engineering at the Technion</a>.
           My main field of interest is machine learning. In particular, I am working on applying deep learning to structured domains (e.g., sets, graphs, point clouds, and surfaces), usually by leveraging their symmetry structure.
           I completed my Ph.D. in 2019 at the Weizmann Institute of Science under the supervision of <a href="http://www.wisdom.weizmann.ac.il/~ylipman/">Prof. Yaron Lipman</a>. </br>
           <!--I serve as a reviewer for NeurIPS, ICML, ICCV, SIGGRAPH, SIGGRAPH Asia and ACM TOG.<br>-->
@@ -172,7 +172,9 @@
                  <h2>Equivariant Architectures for Learning in Deep Weight Spaces</h2>
                  <p>
                    Aviv Navon, Aviv Shamsian, Idan Achituve, Ethan Fetaya, Gal Chechik, Haggai Maron<br>
-                   <i> Technical report 2023</i> <br>
+                   <i>International Conference on Machine Learning (ICML) 2023</i> <br>
+                   </p>
+                   <p style="color:red;">Oral Presentation</p>
                  </p>
                  <a class="btn btn-default abstract" ptitle="Designing machine learning architectures for processing neural networks in their raw weight matrix form is a newly introduced research direction. Unfortunately, the unique symmetry structure of deep weight spaces makes this design very challenging. If successful, such architectures would be capable of performing a wide range of intriguing tasks, from adapting a pre-trained network to a new domain to editing objects represented as functions (INRs or NeRFs). As a first step towards this goal, we present here a novel network architecture for learning in deep weight spaces. It takes as input a concatenation of weights and biases of a pre-trained MLP and processes it using a composition of layers that are equivariant to the natural permutation symmetry of the MLP's weights: Changing the order of neurons in intermediate layers of the MLP does not affect the function it represents. We provide a full characterization of all affine equivariant and invariant layers for these symmetries and show how these layers can be implemented using three basic operations: pooling, broadcasting, and fully connected layers applied to the input in an appropriate manner. We demonstrate the effectiveness of our architecture and its advantages over natural baselines in a variety of learning tasks."> Abstract</a>
                  <a href="https://arxiv.org/abs/2301.12780" class="btn btn-default">Paper </a>
@@ -190,7 +192,8 @@
                  <h2>Graph Positional Encoding via Random Feature Propagation</h2>
                  <p>
                    Moshe Eliasof, Fabrizio Frasca, Beatrice Bevilacqua, Eran Treister, Gal Chechik, Haggai Maron<br>
-                   <i> Technical report 2023</i> <br>
+                   <i>International Conference on Machine Learning (ICML) 2023</i> <br>
+                   </p>
                  </p>
                  <a class="btn btn-default abstract" ptitle="Two main families of node feature augmentation schemes have been explored for enhancing GNNs: random features and spectral positional encoding. Surprisingly, however, there is still no clear understanding of the relation between these two augmentation schemes. Here we propose a novel family of positional encoding schemes which draws a link between the above two approaches and improves over both. The new approach, named Random Feature Propagation (RFP), is inspired by the power iteration method and its generalizations. It concatenates several intermediate steps of an iterative algorithm for computing the dominant eigenvectors of a propagation matrix, starting from random node features. Notably, these propagation steps are based on graph-dependent propagation operators that can be either predefined or learned. We explore the theoretical and empirical benefits of RFP. First, we provide theoretical justifications for using random features, for incorporating early propagation steps, and for using multiple random initializations. Then, we empirically demonstrate that RFP significantly outperforms both spectral PE and random features in multiple node classification and graph classification benchmarks."> Abstract</a>
                  <a href="https://arxiv.org/abs/2303.02918" class="btn btn-default">Paper </a>
@@ -208,7 +211,9 @@
                  <h2>Equivariant Polynomials for Graph Neural Networks</h2>
                  <p>
                    Omri Puny, Derek Lim, Bobak T. Kiani, Haggai Maron, Yaron Lipman<br>
-                   <i> Technical report 2023 </i> <br>
+                   <i>International Conference on Machine Learning (ICML) 2023</i> <br>
+                   </p>
+                   <p style="color:red;">Oral Presentation</p>
                  </p>
                  <a class="btn btn-default abstract" ptitle="Graph Neural Networks (GNN) are inherently limited in their expressive power. Recent seminal works (Xu et al., 2019; Morris et al., 2019b) introduced the Weisfeiler-Lehman (WL) hierarchy as a measure of expressive power. Although this hierarchy has propelled significant advances in GNN analysis and architecture developments, it suffers from several significant limitations. These include a complex definition that lacks direct guidance for model improvement and a WL hierarchy that is too coarse to study current GNNs. This paper introduces an alternative expressive power hierarchy based on the ability of GNNs to calculate equivariant polynomials of a certain degree. As a first step, we provide a full characterization of all equivariant graph polynomials by introducing a concrete basis, significantly generalizing previous results. Each basis element corresponds to a specific multi-graph, and its computation over some graph data input corresponds to a tensor contraction problem. Second, we propose algorithmic tools for evaluating the expressiveness of GNNs using tensor contraction sequences, and calculate the expressive power of popular GNNs. Finally, we enhance the expressivity of common GNN architectures by adding polynomial features or additional operations / aggregations inspired by our theory. These enhanced GNNs demonstrate state-of-the-art results in experiments across multiple graph learning benchmarks."> Abstract</a>
                  <a href="https://arxiv.org/abs/2302.11556" class="btn btn-default">Paper </a>
