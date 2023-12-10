@@ -67,7 +67,7 @@
 				<p>
           I am an Assistant Professor at the <a href="https://vee.technion.ac.il/"> Faculty of Electrical and Computer Engineering at the Technion</a>.
           I am also a senior research scientist at <a href="https://www.nvidia.com/en-us/research/">NVIDIA Research</a> and a member of <a href="https://research.nvidia.com/labs/par/">NVIDIA's TLV lab</a>.
-          My main field of interest is machine learning. In particular, I am working on applying deep learning to structured domains (e.g., sets, graphs, point clouds, surfaces and weight spaces), usually by leveraging their symmetry structure.
+          My primary research interest is in machine learning, with a focus on deep learning for structured data. Specifically, I study how to apply deep learning techniques to sets, graphs, point clouds, surfaces, weight spaces and other mathematical objects that have an inherent symmetry structure. My goal is twofold: first, to understand deep learning architectures from a theoretical perspective, for example, by analyzing their expressive power; and second, to demonstrate their practical effectiveness on real-world problems involving structured data.
           I completed my Ph.D. in 2019 at the Weizmann Institute of Science under the supervision of <a href="http://www.wisdom.weizmann.ac.il/~ylipman/">Prof. Yaron Lipman</a>. </br>
           <!--I serve as a reviewer for NeurIPS, ICML, ICCV, SIGGRAPH, SIGGRAPH Asia and ACM TOG.<br>-->
           <!--<My CV can be found <a href="cv.pdf">here</a>.
@@ -76,7 +76,7 @@
           I am seeking highly motivated Ph.D. students to join my new lab at the Technion. My research combines machine learning, and some aspects of algebra and graph theory, so knowledge and/or interest in these fields are a big plus.
           Coding skills are also required. -->
 
-          You can get an idea of what I am working on by taking a look at these two recent talks I gave:
+          You can get an idea of what I am working on by taking a look at these three recent talks I gave:
           <ul>
             <li><a href='https://www.youtube.com/watch?v=B9xFem6_ckQ&t=8182s'>Equivaraint architectures for learning in deep weight spaces </a></li>
 
@@ -167,6 +167,98 @@
       </div>
 
 
+      <!--Open problems -->
+         <div class="row" id="templatemo_publications_LargeScaleBD">
+             <div class="col-md-1"></div>
+             <div class="col-md-5 col-sm-7 col-xs-24">
+                 <img src="projects/network_align/rep.png" width="400" " alt="">
+             </div>
+             <div class="col-md-1"></div>
+             <div class="col-md-16">
+                 <h2>Equivariant Deep Weight Space Alignment</h2>
+                 <p>
+                   Aviv Navon, Aviv Shamsian, Ethan Fetaya, Gal Chechik, Nadav Dym, Haggai Maron <br>
+                    <i> Technical report, 2023 </i> <br>
+
+                 </p>
+                 <a class="btn btn-default abstract" ptitle="Permutation symmetries of deep networks make simple operations like model averaging and similarity estimation challenging. In many cases, aligning the weights of the networks, i.e., finding optimal permutations between their weights, is necessary. More generally, weight alignment is essential for a wide range of applications, from model merging, through exploring the optimization landscape of deep neural networks, to defining meaningful distance functions between neural networks. Unfortunately, weight alignment is an NP-hard problem. Prior research has mainly focused on solving relaxed versions of the alignment problem, leading to either time-consuming methods or sub-optimal solutions. To accelerate the alignment process and improve its quality, we propose a novel framework aimed at learning to solve the weight alignment problem, which we name Deep-Align. To that end, we first demonstrate that weight alignment adheres to two fundamental symmetries and then, propose a deep architecture that respects these symmetries. Notably, our framework does not require any labeled data. We provide a theoretical analysis of our approach and evaluate Deep-Align on several types of network architectures and learning setups. Our experimental results indicate that a feed-forward pass with Deep-Align produces better or equivalent alignments compared to those produced by current optimization algorithms. Additionally, our alignments can be used as an initialization for other methods to gain even better solutions with a significant speedup in convergence."> Abstract</a>
+                 <a href="https://arxiv.org/abs/2310.13397" class="btn btn-default">Paper </a>
+
+
+             </div>
+           </div><!-- end of row -->
+
+
+
+      <!--Open problems -->
+         <div class="row" id="templatemo_publications_LargeScaleBD">
+             <div class="col-md-1"></div>
+             <div class="col-md-5 col-sm-7 col-xs-24">
+                 <img src="projects/choose_subgraphs/rep.png" width="400" " alt="">
+             </div>
+             <div class="col-md-1"></div>
+             <div class="col-md-16">
+                 <h2>Efficient Subgraph GNNs by Learning Effective Selection Policies</h2>
+                 <p>
+                   Beatrice Bevilacqua, Moshe Eliasof, Eli Meirom, Bruno Ribeiro, Haggai Maron <br>
+                    <i> Technical report, 2023 </i> <br>
+
+                 </p>
+                 <a class="btn btn-default abstract" ptitle="Subgraph GNNs are provably expressive neural architectures that learn graph representations from sets of subgraphs. Unfortunately, their applicability is hampered by the computational complexity associated with performing message passing on many subgraphs. In this paper, we consider the problem of learning to select a small subset of the large set of possible subgraphs in a data-driven fashion. We first motivate the problem by proving that there are families of WL-indistinguishable graphs for which there exist efficient subgraph selection policies: small subsets of subgraphs that can already identify all the graphs within the family. We then propose a new approach, called Policy-Learn, that learns how to select subgraphs in an iterative manner. We prove that, unlike popular random policies and prior work addressing the same problem, our architecture is able to learn the efficient policies mentioned above. Our experimental results demonstrate that Policy-Learn outperforms existing baselines across a wide range of datasets."> Abstract</a>
+                 <a href="https://arxiv.org/abs/2312.04501" class="btn btn-default">Paper </a>
+
+
+             </div>
+           </div><!-- end of row -->
+
+
+
+
+
+      <!--Open problems -->
+         <div class="row" id="templatemo_publications_LargeScaleBD">
+             <div class="col-md-1"></div>
+             <div class="col-md-5 col-sm-7 col-xs-24">
+                 <img src="projects/metanetworks/rep.png" width="400" " alt="">
+             </div>
+             <div class="col-md-1"></div>
+             <div class="col-md-16">
+                 <h2>Graph Metanetworks for Processing Diverse Neural Architectures</h2>
+                 <p>
+                   Derek Lim, Haggai Maron, Marc T. Law, Jonathan Lorraine, James Lucas <br>
+                    <i> Technical report, 2023 </i> <br>
+
+                 </p>
+                 <a class="btn btn-default abstract" ptitle="Neural networks efficiently encode learned information within their parameters. Consequently, many tasks can be unified by treating neural networks themselves as input data. When doing so, recent studies demonstrated the importance of accounting for the symmetries and geometry of parameter spaces. However, those works developed architectures tailored to specific networks such as MLPs and CNNs without normalization layers, and generalizing such architectures to other types of networks can be challenging. In this work, we overcome these challenges by building new metanetworks - neural networks that take weights from other neural networks as input. Put simply, we carefully build graphs representing the input neural networks and process the graphs using graph neural networks. Our approach, Graph Metanetworks (GMNs), generalizes to neural architectures where competing methods struggle, such as multi-head attention layers, normalization layers, convolutional layers, ResNet blocks, and group-equivariant linear layers. We prove that GMNs are expressive and equivariant to parameter permutation symmetries that leave the input neural network functions unchanged. We validate the effectiveness of our method on several metanetwork tasks over diverse neural network architectures."> Abstract</a>
+                 <a href="https://arxiv.org/abs/2312.04501" class="btn btn-default">Paper </a>
+
+
+             </div>
+           </div><!-- end of row -->
+
+
+
+
+
+      <!--Open problems -->
+         <div class="row" id="templatemo_publications_LargeScaleBD">
+             <div class="col-md-1"></div>
+             <div class="col-md-5 col-sm-7 col-xs-24">
+                 <img src="projects/subgraphormer/rep.png" width="400" " alt="">
+             </div>
+             <div class="col-md-1"></div>
+             <div class="col-md-16">
+                 <h2>Subgraphormer: Subgraph GNNs meet Graph Transformers</h2>
+                 <p>
+                   Guy Bar-Shalom, Beatrice Bevilacqua, Haggai Maron <br>
+                    <i> NeurIPS 2023 New Frontiers in Graph Learning Workshop </i> <br>
+                 </p>
+                 <a class="btn btn-default abstract" ptitle="In the realm of Graph Neural Network (GNNs), two intriguing research directions have recently emerged: Subgraph GNNs and Graph Transformers. These approaches have distinct origins -- Subgraph GNNs aim to address the limitations of message passing, while Graph Transformers seek to build on the success of sequential transformers in language and vision tasks. In this paper, we propose a model that integrates both approaches, dubbed Subgraphormer, which combines the message passing and global aggregation schemes from Subgraph GNNs with attention mechanisms and positional and structural encodings, which are arguably the most important components in Graph Transformers. Our preliminary experimental results demonstrate significant performance improvements over both Subgraph GNNs and Graph Transformers."> Abstract</a>
+                 <a href="https://drive.google.com/file/d/1x1e4VjnW6Z3ubF_Q5YcjEBs4W471cTdo/view?usp=drive_link" class="btn btn-default">Paper </a>
+
+
+             </div>
+           </div><!-- end of row -->
 
       <!--Open problems -->
          <div class="row" id="templatemo_publications_LargeScaleBD">
