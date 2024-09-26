@@ -110,10 +110,11 @@
          Aviv Navon (2021-today),
          Aviv Shamsian (2022-today).
 				</p>
-
                 <p>
                 <h4>News</h4>
                 <ul>
+                <li> 4 papers accepted to NeurIPS 2024.</li>
+                <li> Proud to be the recipient of the <a href='https://che.org.il/en/scholarships-integration-outstanding-faculty/'>Alon scholarship for the Integration of Outstanding Faculty</a>.
                 <li> 5 papers accepted to ICML 2024.</li>
                 <li> See my recent talk on <a href='https://www.youtube.com/watch?v=B9xFem6_ckQ&t=8182s'>Equivaraint architectures for learning in deep weight spaces </a>. </li>
                 <li> A new <a href='https://developer.nvidia.com/blog/designing-deep-networks-to-process-other-deep-networks/'> blog post on Equivaraint architectures for learning in deep weight spaces </a>. </li>
@@ -128,6 +129,7 @@
                 <p>
                 <h4>Teaching</h4>
                 <ul>
+                <li>2024/winter (Technion):   Topics in learning on graphs </li>
                 <li>2024/Spring (Technion):   Deep Learning and groups </li>
                 <li>2023/winter (Technion):   Topics in learning on graphs </li>
                 <li>2019/spring (WIS):   Geometric and Algebraic Methods in Deep Learning </li>
@@ -164,6 +166,89 @@
          <div class="row" id="templatemo_publications_LargeScaleBD">
              <div class="col-md-1"></div>
              <div class="col-md-5 col-sm-7 col-xs-24">
+                 <img src="projects/TDL/rep.png" width="450" " alt="">
+             </div>
+             <div class="col-md-1"></div>
+             <div class="col-md-16">
+                 <h2>Topological Blind Spots: Understanding and Extending Topological Deep Learning Through the Lens of Expressivity</h2>
+                 <p>
+                   Yam Eitan, Yoav Gelberg, Guy Bar-Shalom, Fabrizio Frasca, Michael Bronstein, Haggai Maron <br>
+
+                   <i>Technical report  </i> <br> </p>
+                 <a class="btn btn-default abstract" ptitle="Topological deep learning (TDL) facilitates learning from data represented by topological structures. The primary model utilized in this setting is higher-order message-passing (HOMP), which extends traditional graph message-passing neural networks (MPNN) to diverse topological domains. Given the significant expressivity limitations of MPNNs, our paper aims to explore both the strengths and weaknesses of HOMP's expressive power and subsequently design novel architectures to address these limitations. We approach this from several perspectives: First, we demonstrate HOMP's inability to distinguish between topological objects based on fundamental topological and metric properties such as diameter, orientability, planarity, and homology. Second, we show HOMP's limitations in fully leveraging the topological structure of objects constructed using common lifting and pooling operators on graphs. Finally, we compare HOMP's expressive power to hypergraph networks, which are the most extensively studied TDL methods. We then develop two new classes of TDL models: multi-cellular networks (MCN) and scalable multi-cellular networks (SMCN). These models draw inspiration from expressive graph architectures. While MCN can reach full expressivity but is highly unscalable, SMCN offers a more scalable alternative that still mitigates many of HOMP's expressivity limitations. Finally, we construct a synthetic dataset, where TDL models are tasked with separating pairs of topological objects based on basic topological properties. We demonstrate that while HOMP is unable to distinguish between any of the pairs in the dataset, SMCN successfully distinguishes all pairs, empirically validating our theoretical findings. Our work opens a new design space and new opportunities for TDL, paving the way for more expressive and versatile models."> Abstract</a>
+                 <a href="https://arxiv.org/pdf/2408.05486" class="btn btn-default">Paper </a>
+
+             </div>
+      </div><!-- end of row -->
+      <!--Open problems -->
+         <div class="row" id="templatemo_publications_LargeScaleBD">
+             <div class="col-md-1"></div>
+             <div class="col-md-5 col-sm-7 col-xs-24">
+                 <img src="projects/coarsening/rep.png" width="450" " alt="">
+             </div>
+             <div class="col-md-1"></div>
+             <div class="col-md-16">
+                 <h2>A Flexible, Equivariant Framework for Subgraph GNNs via Graph Products and Graph Coarsening</h2>
+                 <p>
+                   Guy Bar-Shalom, Yam Eitan, Fabrizio Frasca, Haggai Maron <br>
+
+                   <i>38th Annual Conference on Neural Information Processing Systems (NeurIPS 2024)  </i> <br> </p>
+                 <a class="btn btn-default abstract" ptitle="Subgraph Graph Neural Networks (Subgraph GNNs) enhance the expressivity of message-passing GNNs by representing graphs as sets of subgraphs. They have shown impressive performance on several tasks, but their complexity limits applications to larger graphs. Previous approaches suggested processing only subsets of subgraphs, selected either randomly or via learnable sampling. However, they make suboptimal subgraph selections or can only cope with very small subset sizes, inevitably incurring performance degradation. This paper introduces a new Subgraph GNNs framework to address these issues. We employ a graph coarsening function to cluster nodes into super-nodes with induced connectivity. The product between the coarsened and the original graph reveals an implicit structure whereby subgraphs are associated with specific sets of nodes. By running generalized message-passing on such graph product, our method effectively implements an efficient, yet powerful Subgraph GNN. Controlling the coarsening function enables meaningful selection of any number of subgraphs while, contrary to previous methods, being fully compatible with standard training techniques. Notably, we discover that the resulting node feature tensor exhibits new, unexplored permutation symmetries. We leverage this structure, characterize the associated linear equivariant layers and incorporate them into the layers of our Subgraph GNN architecture. Extensive experiments on multiple graph learning benchmarks demonstrate that our method is significantly more flexible than previous approaches, as it can seamlessly handle any number of subgraphs, while consistently outperforming baseline approaches."> Abstract</a>
+                 <a href="https://arxiv.org/abs/2406.09291" class="btn btn-default">Paper </a>
+
+             </div>
+      </div><!-- end of row -->
+
+
+      <!--Open problems -->
+         <div class="row" id="templatemo_publications_LargeScaleBD">
+             <div class="col-md-1"></div>
+             <div class="col-md-5 col-sm-7 col-xs-24">
+                 <img src="projects/4d/rep.png" width="450" " alt="">
+             </div>
+             <div class="col-md-1"></div>
+             <div class="col-md-16">
+                 <h2>Fast Encoder-Based 3D from Casual Videos via Point Track Processing</h2>
+                 <p>
+                   Yoni Kasten, Wuyue Lu, Haggai Maron <br>
+
+                   <i>38th Annual Conference on Neural Information Processing Systems (NeurIPS 2024)  </i> <br> </p>
+                 <a class="btn btn-default abstract" ptitle="This paper addresses the long-standing challenge of reconstructing 3D structures from videos with dynamic content. Current approaches to this problem were not designed to operate on casual videos recorded by standard cameras or require a long optimization time.
+Aiming to significantly improve the efficiency of previous approaches, we present TracksTo4D, a learning-based approach that enables inferring 3D structure and camera positions from dynamic content originating from casual videos using a single efficient feed-forward pass. To achieve this, we propose operating directly over 2D point tracks as input and designing an architecture tailored for processing 2D point tracks. Our proposed architecture is designed with two key principles in mind: (1) it takes into account the inherent symmetries present in the input point tracks data, and (2) it assumes that the movement patterns can be effectively represented using a low-rank approximation. TracksTo4D is trained in an unsupervised way on a dataset of casual videos utilizing only the 2D point tracks extracted from the videos, without any 3D supervision. Our experiments show that TracksTo4D can reconstruct a temporal point cloud and camera positions of the underlying video with accuracy comparable to state-of-the-art methods, while drastically reducing runtime by up to 95\%. We further show that TracksTo4D generalizes well to unseen videos of unseen semantic categories at inference time."> Abstract</a>
+                 <a href="https://arxiv.org/abs/2404.07097" class="btn btn-default">Paper </a>
+
+             </div>
+      </div><!-- end of row -->
+
+
+      <!--Open problems -->
+         <div class="row" id="templatemo_publications_LargeScaleBD">
+             <div class="col-md-1"></div>
+             <div class="col-md-5 col-sm-7 col-xs-24">
+                 <img src="projects/granola/rep.png" width="450" " alt="">
+             </div>
+             <div class="col-md-1"></div>
+             <div class="col-md-16">
+                 <h2>GRANOLA: Adaptive Normalization for Graph Neural Networks</h2>
+                 <p>
+                   Moshe Eliasof, Beatrice Bevilacqua, Carola-Bibiane Schönlieb, Haggai Maron <br>
+
+                   <i>38th Annual Conference on Neural Information Processing Systems (NeurIPS 2024)  </i> <br> </p>
+                 <a class="btn btn-default abstract" ptitle="In recent years, significant efforts have been made to refine the design of Graph Neural Network (GNN) layers, aiming to overcome diverse challenges, such as limited expressive power and oversmoothing. Despite their widespread adoption, the incorporation of off-the-shelf normalization layers like BatchNorm or InstanceNorm within a GNN architecture may not effectively capture the unique characteristics of graph-structured data, potentially reducing the expressive power of the overall architecture. Moreover, existing graph-specific normalization layers often struggle to offer substantial and consistent benefits. In this paper, we propose GRANOLA, a novel graph-adaptive normalization layer. Unlike existing normalization layers, GRANOLA normalizes node features by adapting to the specific characteristics of the graph, particularly by generating expressive representations of its neighborhood structure, obtained by leveraging the propagation of Random Node Features (RNF) in the graph. We present theoretical results that support our design choices. Our extensive empirical evaluation of various graph benchmarks underscores the superior performance of GRANOLA over existing normalization techniques. Furthermore, GRANOLA emerges as the top-performing method among all baselines within the same time complexity of Message Passing Neural Networks (MPNNs)."> Abstract</a>
+                 <a href="https://arxiv.org/abs/2404.13344" class="btn btn-default">Paper </a>
+
+             </div>
+      </div><!-- end of row -->
+
+
+
+
+
+
+      <!--Open problems -->
+         <div class="row" id="templatemo_publications_LargeScaleBD">
+             <div class="col-md-1"></div>
+             <div class="col-md-5 col-sm-7 col-xs-24">
                  <img src="projects/asymetric_networks/rep.png" width="450" " alt="">
              </div>
              <div class="col-md-1"></div>
@@ -171,9 +256,10 @@
                  <h2>The Empirical Impact of Neural Parameter Symmetries, or Lack Thereof</h2>
                  <p>
                    Derek Lim*, Theo (Moe) Putterman*, Robin Walters, Haggai Maron, Stefanie Jegelka<br>
-                 <i>HiLD 2024: 2nd Workshop on High-dimensional Learning Dynamics @ ICML 2024</i> <br>
-                 </p>
-                 <p style="color:red;">Best paper award</p>
+                   <i>38th Annual Conference on Neural Information Processing Systems (NeurIPS 2024)  </i> <br>
+
+                 <i>(A shorter version also appeared in HiLD 2024: 2nd Workshop on High-dimensional Learning Dynamics @ ICML 2024</i> winning the <span style="color:red;">Best paper award</span>)</p>
+
                  <a class="btn btn-default abstract" ptitle="Many algorithms and observed phenomena in deep learning appear to be affected by parameter symmetries — transformations of neural network parameters that do not change the underlying
       neural network function. These include linear mode connectivity, model merging, Bayesian neural network inference, metanetworks, and several other characteristics of optimization or loss-landscapes.
       In this work, we empirically investigate the impact of neural parameter symmetries by introducing new neural network architectures that have reduced parameter space symmetries. We develop
