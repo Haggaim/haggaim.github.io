@@ -20,7 +20,7 @@ h1,h2, h3, h4, h5, h6 {
 }
 h1 {
     text-align: left;
-	margin-left: 345px; 
+	margin-left: 345px;
 	margin-top: 30px;
 	margin-bottom: -10px;
 }
@@ -656,9 +656,9 @@ background: #333;
 	-webkit-transition: opacity .25s ease-in-out;
     -moz-transition: opacity .25s ease-in-out;
     transition: opacity .25s ease-in-out;
-}		
+}
 .abstract:hover:after {
-    opacity: 1;    
+    opacity: 1;
 	width: 700px;
 	height: auto;
 	padding: 5px 15px;
