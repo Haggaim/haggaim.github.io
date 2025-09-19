@@ -115,10 +115,8 @@
                 <p>
                 <h4>News</h4>
                 <ul>
-                <li> 3 papers accepted to ICLR 2025.</li>
-                <li> 4 papers accepted to NeurIPS 2024.</li>
+                <li>See my recent bootcamp talk on <a href='https://youtu.be/ENW8T59-_eE?t=2728'>the expressive power of GNNs</a> at the <a href='https://simons.berkeley.edu/workshops/graph-learning-meets-theoretical-computer-science/videos#simons-tabs'>  Graph Learning Meets Theoretical Computer Science workshop  </a> we organized at the Simons Institute.
                 <li> Proud to be the recipient of the <a href='https://che.org.il/en/scholarships-integration-outstanding-faculty/'>Alon scholarship for the Integration of Outstanding Faculty</a>.
-                <li> 5 papers accepted to ICML 2024.</li>
                 <li> See my recent talk on <a href='https://www.youtube.com/watch?v=B9xFem6_ckQ&t=8182s'>Equivaraint architectures for learning in deep weight spaces </a>. </li>
                 <li> A new <a href='https://developer.nvidia.com/blog/designing-deep-networks-to-process-other-deep-networks/'> blog post on Equivaraint architectures for learning in deep weight spaces </a>. </li>
                 <li> I will serve as an area chair at NeurIPS 2023.</li>
@@ -165,6 +163,83 @@
             <h1>Publications</h1>
         </div>
       </div>
+
+
+
+
+      <!--Open problems -->
+         <div class="row" id="templatemo_publications_LargeScaleBD">
+             <div class="col-md-1"></div>
+             <div class="col-md-5 col-sm-7 col-xs-24">
+                 <img src="projects/ACTVIT/rep.png" width="450" " alt="">
+             </div>
+             <div class="col-md-1"></div>
+             <div class="col-md-16">
+                 <h2>Beyond Token Probes: Hallucination Detection via Activation Tensors with ACT-ViT</h2>
+                 <p>
+                  Guy Bar-Shalom, Fabrizio Frasca, Yaniv Galron, Yftah Ziser, Haggai Maron <br>
+
+                   <i>39th Annual Conference on Neural Information Processing Systems (NeurIPS 2025)  </i> <br> </p>
+                 <a class="btn btn-default abstract" ptitle=" Detecting hallucinations in Large Language Model-generated text is crucial for their safe deployment. While probing classifiers show promise, they operate on isolated layer–token pairs and are LLM-specific, limiting their effectiveness and hindering cross-LLM applications. In this paper, we introduce a novel approach to address these shortcomings. We build on the natural sequential structure of activation data in both axes (layers $\times$ tokens) and advocate treating full activation tensors akin to images. We design ACT-ViT, a Vision Transformer-inspired model that can be effectively and efficiently applied to activation tensors and supports training on data from multiple LLMs simultaneously. Through comprehensive experiments encompassing diverse LLMs and datasets, we demonstrate that ACT-ViT consistently outperforms traditional probing techniques while remaining extremely efficient for deployment. In particular, we show that our architecture benefits substantially from multi-LLM training, achieves strong zero-shot performance on unseen datasets, and can be transferred effectively to new LLMs through fine-tuning."> Abstract</a>
+                 <a href="" class="btn btn-default">Paper </a>
+             </div>
+      </div><!-- end of row -->
+      <!--Open problems -->
+         <div class="row" id="templatemo_publications_LargeScaleBD">
+             <div class="col-md-1"></div>
+             <div class="col-md-5 col-sm-7 col-xs-24">
+                 <img src="projects/gradmetanet/rep.png" width="450" " alt="">
+             </div>
+             <div class="col-md-1"></div>
+             <div class="col-md-16">
+                 <h2>GradMetaNet: An Equivariant Architecture for Learning on Gradients</h2>
+                 <p>
+                   Yoav Gelberg, Yam Eitan, Aviv Navon, Aviv Shamsian, Theo Putterman, Michael M. Bronstein, Haggai Maron <br>
+
+                   <i>39th Annual Conference on Neural Information Processing Systems (NeurIPS 2025)  </i> <br> </p>
+                 <a class="btn btn-default abstract" ptitle=" Gradients of neural networks encode valuable information for optimization, editing, and analysis of models. Therefore, practitioners often treat gradients as inputs to task-specific algorithms, e.g., using gradient statistics for pruning or optimization. Recent works explore *learning* algorithms that operate directly on gradients but use architectures that are not specifically designed for gradient processing, hindering their applicability. In this paper, we present a principled approach for designing architectures that process gradients. Our approach is guided by three principles: (1) equivariant design that preserves neuron permutation symmetries, (2) processing sets of gradients across multiple data points to capture curvature information, and (3) efficient gradient representation through rank-1 decomposition. Based on these principles, we introduce GradMetaNet, a novel architecture for learning on gradients, constructed from simple equivariant blocks. We prove universality results for GradMetaNet, and show that previous approaches cannot approximate natural gradient-based functions that GradMetaNet can. We then demonstrate GradMetaNet's effectiveness on a diverse set of gradient-based tasks for *MLPs* and *transformers*, such as learned optimization, INR editing, and loss landscape curvature estimation."> Abstract</a>
+                 <a href="https://arxiv.org/abs/2507.01649" class="btn btn-default">Paper </a>
+             </div>
+      </div><!-- end of row -->
+      <!--Open problems -->
+         <div class="row" id="templatemo_publications_LargeScaleBD">
+             <div class="col-md-1"></div>
+             <div class="col-md-5 col-sm-7 col-xs-24">
+                 <img src="projects/temp_grad/rep.png" width="450" " alt="">
+             </div>
+             <div class="col-md-1"></div>
+             <div class="col-md-16">
+                 <h2>Understanding and Improving Laplacian Positional Encodings For Temporal GNNs</h2>
+                 <p>
+                   Yaniv Galron, Fabrizio Frasca, Haggai Maron, Eran Treister, Moshe Eliasof <br>
+
+                   <i>ECML-PKDD 2025</i> <br>
+                 <a class="btn btn-default abstract" ptitle="Temporal graph learning has applications in recommendation systems, traffic forecasting, and social network analysis. Although multiple architectures have been introduced, progress in positional encoding for temporal graphs remains limited. Extending static Laplacian eigenvector approaches to temporal graphs through the supra-Laplacian has shown promise, but also poses key challenges: high eigendecomposition costs, limited theoretical understanding, and ambiguity about when and how to apply these encodings. In this paper, we address these issues by (1) offering a theoretical framework that connects supra-Laplacian encodings to per-time-slice encodings, highlighting the benefits of leveraging additional temporal connectivity, (2) introducing novel methods to reduce the computational overhead, achieving up to 56x faster runtimes while scaling to graphs with 50,000 active nodes, and (3) conducting an extensive experimental study to identify which models, tasks, and datasets benefit most from these encodings. Our findings reveal that while positional encodings can significantly boost performance in certain scenarios, their effectiveness varies across different models."> Abstract</a>
+                 <a href="https://arxiv.org/abs/2506.01596" class="btn btn-default">Paper </a>
+             </div>
+      </div><!-- end of row -->
+
+      <!--Open problems -->
+         <div class="row" id="templatemo_publications_LargeScaleBD">
+             <div class="col-md-1"></div>
+             <div class="col-md-5 col-sm-7 col-xs-24">
+                 <img src="projects/Hymn/rep.png" width="450" " alt="">
+             </div>
+             <div class="col-md-1"></div>
+             <div class="col-md-16">
+                 <h2>Balancing Efficiency and Expressiveness: Subgraph GNNs with Walk-Based Centrality</h2>
+                 <p>
+                   Joshua Southern*, Yam Eitan, Guy Bar-Shalom, Michael Bronstein, Haggai Maron, Fabrizio Frasca* <br>
+
+                   <i>International Conference on Machine Learning (ICML) 2025</i> <br>
+                 <a class="btn btn-default abstract" ptitle="We propose an expressive and efficient approach that combines the strengths of two prominent extensions of Graph Neural Networks (GNNs): Subgraph GNNs and Structural Encodings (SEs). Our approach leverages walk-based centrality measures, both as a powerful form of SE and also as a subgraph selection strategy for Subgraph GNNs. By drawing a connection to perturbation analysis, we highlight the effectiveness of centrality-based sampling, and show it significantly reduces the computational burden associated with Subgraph GNNs. Further, we combine our efficient Subgraph GNN with SEs derived from the calculated centrality and demonstrate this hybrid approach, dubbed HyMN, gains in discriminative power. HyMN effectively addresses the expressiveness limitations of Message Passing Neural Networks (MPNNs) while mitigating the computational costs of Subgraph GNNs. Through a series of experiments on synthetic and real-world tasks, we show it outperforms other subgraph sampling approaches while being competitive with full-bag Subgraph GNNs and other state-of-the-art approaches with a notably reduced runtime."> Abstract</a>
+                 <a href="https://arxiv.org/abs/2501.03113" class="btn btn-default">Paper </a>
+                 <a href="https://github.com/jks17/HyMN/" class="btn btn-default">Code </a>
+
+
+             </div>
+      </div><!-- end of row -->
+
 
       <!--Open problems -->
          <div class="row" id="templatemo_publications_LargeScaleBD">
@@ -235,7 +310,27 @@
              </div>
       </div><!-- end of row -->
 
+      <!--Open problems -->
+         <div class="row" id="templatemo_publications_LargeScaleBD">
+             <div class="col-md-1"></div>
+             <div class="col-md-5 col-sm-7 col-xs-24">
+                 <img src="projects/LOS/rep.png" width="450" " alt="">
+             </div>
+             <div class="col-md-1"></div>
+             <div class="col-md-16">
+                 <h2>Learning on LLM Output Signatures for Gray-Box Behavior Analysis</h2>
+                 <p>
+                   Guy Bar-Shalom*, Fabrizio Frasca*, Derek Lim, Yoav Gelberg, Yftah Ziser, Ran El-Yaniv, Gal Chechik, Haggai Maron <br>
 
+                   <i>ICLR 2025 workshop 'Quantify Uncertainty and Hallucination in Foundation Models'</i> <br>
+                 <a class="btn btn-default abstract" ptitle="Large Language Models (LLMs) have achieved widespread adoption, yet our understanding of their behavior remains limited, particularly in detecting data contamination and hallucinations. While recently proposed probing techniques provide insights through activation analysis, they require ''white-box'' access to model internals, often unavailable. Current ''gray-box'' approaches typically analyze only the probability of the actual tokens in the sequence with simple task-specific heuristics. Importantly, these methods overlook the rich information contained in the full token distribution at each processing step. To address these limitations, we propose that gray-box analysis should leverage the complete observable output of LLMs, consisting of both the previously used token probabilities as well as the complete token distribution sequences - a unified data type we term LOS (LLM Output Signature). To this end, we develop a transformer-based approach to process LOS that theoretically guarantees approximation of existing techniques while enabling more nuanced analysis. Our approach achieves superior performance on hallucination and data contamination detection in gray-box settings, significantly outperforming existing baselines. Furthermore, it demonstrates strong transfer capabilities across datasets and LLMs, suggesting that LOS captures fundamental patterns in LLM behavior."> Abstract</a>
+                 <a href="https://arxiv.org/abs/2503.14043" class="btn btn-default">Paper </a>
+                 <a href="https://github.com/BarSGuy/LLM-Output-Signatures-Network" class="btn btn-default">Code </a>
+                 <p style="color:red;">Spotlight Presentation</p>
+
+
+             </div>
+      </div><!-- end of row -->
 
 
 
@@ -330,6 +425,28 @@ Aiming to significantly improve the efficiency of previous approaches, we presen
       symmetries; for instance, we observe linear mode connectivity and monotonic linear interpolation in our networks, without any alignment of weight spaces."> Abstract</a>
                  <a href="https://openreview.net/pdf?id=gkrynRGiOi" class="btn btn-default">Paper (Workshop version) </a>
                  <a href="https://arxiv.org/abs/2405.20231" class="btn btn-default">Paper (Full version) </a>
+
+             </div>
+      </div><!-- end of row -->
+
+
+
+
+      <!--Open problems -->
+         <div class="row" id="templatemo_publications_LargeScaleBD">
+             <div class="col-md-1"></div>
+             <div class="col-md-5 col-sm-7 col-xs-24">
+                 <img src="projects/graph_found/rep.png" width="450" " alt="">
+             </div>
+             <div class="col-md-1"></div>
+             <div class="col-md-16">
+                 <h2>Towards Foundation Models on Graphs: An Analysis on Cross-Dataset Transfer of Pretrained GNNs</h2>
+                 <p>
+                   Fabrizio Frasca, Fabian Jogl, Moshe Eliasof, Matan Ostrovsky, Carola-Bibiane Schönlieb, Thomas Gärtner, Haggai Maron<br>
+                   <i>Symmetry and Geometry in Neural Representations (NeurReps) @ NeurIPS 2024  </i> <br>
+
+                 <a class="btn btn-default abstract" ptitle="To develop a preliminary understanding towards Graph Foundation Models, we study the extent to which pretrained Graph Neural Networks can be applied across datasets, an effort requiring to be agnostic to dataset-specific features and their encodings. We build upon a purely structural pretraining approach and propose an extension to capture feature information while still being feature-agnostic. We evaluate pretrained models on downstream tasks for varying amounts of training samples and choices of pretraining datasets. Our preliminary results indicate that embeddings from pretrained models improve generalization only with enough downstream data points and in a degree which depends on the quantity and properties of pretraining data. Feature information can lead to improvements, but currently requires some similarities between pretraining and downstream feature spaces."> Abstract</a>
+                 <a href="https://arxiv.org/abs/2412.17609" class="btn btn-default">Paper</a>
 
              </div>
       </div><!-- end of row -->
