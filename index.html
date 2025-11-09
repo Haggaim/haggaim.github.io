@@ -168,6 +168,30 @@
 
 
 
+
+      <!--Open problems -->
+         <div class="row" id="templatemo_publications_LargeScaleBD">
+             <div class="col-md-1"></div>
+             <div class="col-md-5 col-sm-7 col-xs-24">
+                 <img src="projects/LOS/rep.png" width="450" " alt="">
+             </div>
+             <div class="col-md-1"></div>
+             <div class="col-md-16">
+                 <h2>Beyond Next Token Probabilities: Learnable, Fast Detection of Hallucinations and Data Contamination on LLM Output Distributions</h2>
+                 <p>
+                   Guy Bar-Shalom*, Fabrizio Frasca*, Derek Lim, Yoav Gelberg, Yftah Ziser, Ran El-Yaniv, Gal Chechik, Haggai Maron <br>
+
+                   <i>The 40th Annual AAAI Conference on Artificial Intelligence (AAAI 2026)</i> <br>
+                   <i>A shorter version was also presented as a <span style="color:red;">spotlight presentation </span> at the ICLR 2025 workshop 'Quantify Uncertainty and Hallucination in Foundation Models'</i> <br>
+                 <a class="btn btn-default abstract" ptitle="Large Language Models (LLMs) have achieved widespread adoption, yet our understanding of their behavior remains limited, particularly in detecting data contamination and hallucinations. While recently proposed probing techniques provide insights through activation analysis, they require ''white-box'' access to model internals, often unavailable. Current ''gray-box'' approaches typically analyze only the probability of the actual tokens in the sequence with simple task-specific heuristics. Importantly, these methods overlook the rich information contained in the full token distribution at each processing step. To address these limitations, we propose that gray-box analysis should leverage the complete observable output of LLMs, consisting of both the previously used token probabilities as well as the complete token distribution sequences - a unified data type we term LOS (LLM Output Signature). To this end, we develop a transformer-based approach to process LOS that theoretically guarantees approximation of existing techniques while enabling more nuanced analysis. Our approach achieves superior performance on hallucination and data contamination detection in gray-box settings, significantly outperforming existing baselines. Furthermore, it demonstrates strong transfer capabilities across datasets and LLMs, suggesting that LOS captures fundamental patterns in LLM behavior."> Abstract</a>
+                 <a href="https://arxiv.org/abs/2503.14043" class="btn btn-default">Paper </a>
+                 <a href="https://github.com/BarSGuy/LLM-Output-Signatures-Network" class="btn btn-default">Code </a>
+
+
+             </div>
+      </div><!-- end of row -->
+
+
             <!--Open problems -->
                <div class="row" id="templatemo_publications_LargeScaleBD">
                    <div class="col-md-1"></div>
@@ -370,27 +394,7 @@
 
              </div>
       </div><!-- end of row -->
-      <!--Open problems -->
-         <div class="row" id="templatemo_publications_LargeScaleBD">
-             <div class="col-md-1"></div>
-             <div class="col-md-5 col-sm-7 col-xs-24">
-                 <img src="projects/LOS/rep.png" width="450" " alt="">
-             </div>
-             <div class="col-md-1"></div>
-             <div class="col-md-16">
-                 <h2>Learning on LLM Output Signatures for Gray-Box Behavior Analysis</h2>
-                 <p>
-                   Guy Bar-Shalom*, Fabrizio Frasca*, Derek Lim, Yoav Gelberg, Yftah Ziser, Ran El-Yaniv, Gal Chechik, Haggai Maron <br>
 
-                   <i>ICLR 2025 workshop 'Quantify Uncertainty and Hallucination in Foundation Models'</i> <br>
-                 <a class="btn btn-default abstract" ptitle="Large Language Models (LLMs) have achieved widespread adoption, yet our understanding of their behavior remains limited, particularly in detecting data contamination and hallucinations. While recently proposed probing techniques provide insights through activation analysis, they require ''white-box'' access to model internals, often unavailable. Current ''gray-box'' approaches typically analyze only the probability of the actual tokens in the sequence with simple task-specific heuristics. Importantly, these methods overlook the rich information contained in the full token distribution at each processing step. To address these limitations, we propose that gray-box analysis should leverage the complete observable output of LLMs, consisting of both the previously used token probabilities as well as the complete token distribution sequences - a unified data type we term LOS (LLM Output Signature). To this end, we develop a transformer-based approach to process LOS that theoretically guarantees approximation of existing techniques while enabling more nuanced analysis. Our approach achieves superior performance on hallucination and data contamination detection in gray-box settings, significantly outperforming existing baselines. Furthermore, it demonstrates strong transfer capabilities across datasets and LLMs, suggesting that LOS captures fundamental patterns in LLM behavior."> Abstract</a>
-                 <a href="https://arxiv.org/abs/2503.14043" class="btn btn-default">Paper </a>
-                 <a href="https://github.com/BarSGuy/LLM-Output-Signatures-Network" class="btn btn-default">Code </a>
-                 <p style="color:red;">Spotlight Presentation</p>
-
-
-             </div>
-      </div><!-- end of row -->
 
 
 
