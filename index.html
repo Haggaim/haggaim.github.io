@@ -65,7 +65,7 @@
             <div class="col-md-16">
                 <h2>Haggai Maron</h2>
 				<p>
-          I am an Assistant Professor and the Robert J. Shillman Fellow at the <a href="https://vee.technion.ac.il/"> Faculty of Electrical and Computer Engineering at the Technion</a> and a senior research scientist at <a href="https://www.nvidia.com/en-us/research/">NVIDIA Research</a> at <a href="https://research.nvidia.com/labs/par/">NVIDIA's lab in Tel Aviv</a>.
+          I am an Assistant Professor at the <a href="https://vee.technion.ac.il/"> Faculty of Electrical and Computer Engineering at the Technion</a> and a senior research scientist at <a href="https://www.nvidia.com/en-us/research/">NVIDIA Research</a> at <a href="https://research.nvidia.com/labs/par/">NVIDIA's lab in Tel Aviv</a>.
           My primary research interest is in machine learning, with a focus on deep learning for structured data. Specifically, I study how to apply deep learning techniques to sets, graphs, point clouds, surfaces, weight spaces and other mathematical objects that have an inherent symmetry structure. My goal is twofold: first, to understand and design deep learning architectures from a theoretical perspective, for example, by analyzing their expressive power; and second, to demonstrate their practical effectiveness on real-world problems involving structured data.
           I completed my Ph.D. in 2019 at the Weizmann Institute of Science under the supervision of <a href="http://www.wisdom.weizmann.ac.il/~ylipman/">Prof. Yaron Lipman</a>. </br>
           <!--I serve as a reviewer for NeurIPS, ICML, ICCV, SIGGRAPH, SIGGRAPH Asia and ACM TOG.<br>-->
@@ -168,6 +168,94 @@
         </div>
       </div>
 
+
+      <!-- CHARM -->
+         <div class="row" id="templatemo_publications_CHARM">
+             <div class="col-md-1"></div>
+             <div class="col-md-5 col-sm-7 col-xs-24">
+                 <img src="projects/CHARM/rep.png" width="450" " alt="">
+             </div>
+             <div class="col-md-1"></div>
+             <div class="col-md-16">
+                 <h2>Neural Message-Passing on Attention Graphs for Hallucination Detection</h2>
+                 <p>
+                   Fabrizio Frasca, Guy Bar-Shalom, Yftah Ziser, Haggai Maron <br>
+                   <i>The Fourteenth International Conference on Learning Representations (ICLR 2026)</i> <br>
+                 <a class="btn btn-default abstract" ptitle="Large Language Models (LLMs) often generate incorrect or unsupported content, known as hallucinations. Existing detection methods rely on heuristics or simple models over isolated computational traces such as activations, or attention maps. We unify these signals by representing them as attributed graphs, where tokens are nodes, edges follow attentional flows, and both carry features from attention scores and activations. Our approach, CHARM, casts hallucination detection as a graph learning task and tackles it by applying GNNs over the above attributed graphs. We show that CHARM provably subsumes prior attention-based heuristics and, experimentally, it consistently outperforms other leading approaches across diverse benchmarks. Our results shed light on the relevant role played by the graph structure and on the benefits of combining computational traces, whilst showing CHARM exhibits promising zero-shot performance on cross-dataset transfer."> Abstract</a>
+                 <a href="https://arxiv.org/abs/2509.24770" class="btn btn-default">Paper </a>
+                 <a href="https://openreview.net/forum?id=4twbqwV4br" class="btn btn-default">OpenReview </a>
+             </div>
+      </div><!-- end of row -->
+      <!-- FS-KAN -->
+               <div class="row" id="templatemo_publications_FSKAN">
+                   <div class="col-md-1"></div>
+                   <div class="col-md-5 col-sm-7 col-xs-24">
+                       <img src="projects/FSKAN/rep.png" width="450" " alt="">
+                   </div>
+                   <div class="col-md-1"></div>
+                   <div class="col-md-16">
+                       <h2>FS-KAN: Permutation Equivariant Kolmogorov-Arnold Networks via Function Sharing</h2>
+                       <p>
+                         Ran Elbaz, Guy Bar-Shalom, Yam Eitan, Fabrizio Frasca, Haggai Maron <br>
+                         <i>The Fourteenth International Conference on Learning Representations (ICLR 2026)</i> <br>
+                       <a class="btn btn-default abstract" ptitle="Permutation equivariant neural networks employing parameter-sharing schemes have emerged as powerful models for leveraging a wide range of data symmetries, significantly enhancing the generalization and computational efficiency of the resulting models. Recently, Kolmogorov-Arnold Networks (KANs) have demonstrated promise through their improved interpretability and expressivity compared to traditional architectures based on MLPs. While equivariant KANs have been explored in recent literature for a few specific data types, a principled framework for applying them to data with permutation symmetries in a general context remains absent. This paper introduces Function Sharing KAN (FS-KAN), a principled approach to constructing equivariant and invariant KA layers for arbitrary permutation symmetry groups, unifying and significantly extending previous work in this domain. We derive the basic construction of these FS-KAN layers by generalizing parameter-sharing schemes to the Kolmogorov-Arnold setup and provide a theoretical analysis demonstrating that FS-KANs have the same expressive power as networks that use standard parameter-sharing layers, allowing us to transfer well-known and important expressivity results from parameter-sharing networks to FS-KANs. Empirical evaluations on multiple data types and symmetry groups show that FS-KANs exhibit superior data efficiency compared to standard parameter-sharing layers, by a wide margin in certain cases, while preserving the interpretability and adaptability of KANs, making them an excellent architecture choice in low-data regimes."> Abstract</a>
+                       <a href="https://arxiv.org/abs/2509.24472" class="btn btn-default">Paper </a>
+                       <a href="https://openreview.net/forum?id=l4m4HK6gJN" class="btn btn-default">OpenReview </a>
+                   </div>
+            </div><!-- end of row -->
+
+            <!-- HOD-GNN -->
+               <div class="row" id="templatemo_publications_HODGNN">
+                   <div class="col-md-1"></div>
+                   <div class="col-md-5 col-sm-7 col-xs-24">
+                       <img src="projects/HODGNN/rep.png" width="450" " alt="">
+                   </div>
+                   <div class="col-md-1"></div>
+                   <div class="col-md-16">
+                       <h2>On The Expressive Power of GNN Derivatives</h2>
+                       <p>
+                         Yam Eitan, Moshe Eliasof, Yoav Gelberg, Fabrizio Frasca, Guy Bar-Shalom, Haggai Maron <br>
+                         <i>The Fourteenth International Conference on Learning Representations (ICLR 2026)</i> <br>
+                       <a class="btn btn-default abstract" ptitle="Despite significant advances in Graph Neural Networks (GNNs), their limited expressivity remains a fundamental challenge. Research on GNN expressivity has produced many expressive architectures, leading to architecture hierarchies with models of increasing expressive power. Separately, derivatives of GNNs with respect to node features have been widely studied in the context of the oversquashing and over-smoothing phenomena, GNN explainability, and more. To date, these derivatives remain unexplored as a means to enhance GNN expressivity. In this paper, we show that these derivatives provide a natural way to enhance the expressivity of GNNs. We introduce High-Order Derivative GNN (HOD-GNN), a novel method that enhances the expressivity of Message Passing Neural Networks (MPNNs) by leveraging high-order node derivatives of the base model. These derivatives generate expressive structure-aware node embeddings processed by a second GNN in an end-to-end trainable architecture. Theoretically, we show that the resulting architecture family's expressive power aligns with the WL hierarchy. We also draw deep connections between HOD-GNN, Subgraph GNNs, and popular structural encoding schemes. For computational efficiency, we develop a message-passing algorithm for computing high-order derivatives of MPNNs that exploits graph sparsity and parallelism. Evaluations on popular graph learning benchmarks demonstrate HOD-GNN's strong performance on popular graph learning tasks."> Abstract</a>
+                       <a href="https://arxiv.org/abs/2510.02565" class="btn btn-default">Paper </a>
+                   </div>
+            </div><!-- end of row -->
+
+
+
+            <!-- WS-KAN -->
+               <div class="row" id="templatemo_publications_WSKAN">
+                   <div class="col-md-1"></div>
+                   <div class="col-md-5 col-sm-7 col-xs-24">
+                       <img src="projects/WSKAN/rep.png" width="450" " alt="">
+                   </div>
+                   <div class="col-md-1"></div>
+                   <div class="col-md-16">
+                       <h2>A Graph Meta-Network for Learning on Kolmogorov–Arnold Networks</h2>
+                       <p>
+                         Guy Bar-Shalom, Ami Tavory, Itay Evron, Maya Bechler-Speicher, Ido Guy, Haggai Maron <br>
+                         <i>The Fourteenth International Conference on Learning Representations (ICLR 2026)</i> <br>
+                       <a class="btn btn-default abstract" ptitle="Weight-space models learn directly from the parameters of neural networks, enabling tasks such as predicting their accuracy on new datasets. Naive methods -- like applying MLPs to flattened parameters -- perform poorly, making the design of better weight-space architectures a central challenge. While prior work leveraged permutation symmetries in standard networks to guide such designs, no analogous analysis or tailored architecture yet exists for Kolmogorov–Arnold Networks (KANs). In this work, we show that KANs share the same permutation symmetries as MLPs, and propose the KAN-graph, a graph representation of their computation. Building on this, we develop WS-KAN, the first weight-space architecture that learns on KANs, which naturally accounts for their symmetry. We analyze WS-KAN's expressive power, showing it can replicate an input KAN's forward pass - a standard approach for assessing expressiveness in weight-space architectures. We construct a comprehensive 'zoo' of trained KANs spanning diverse tasks, which we use as benchmarks to empirically evaluate WS-KAN. Across all tasks, WS-KAN consistently outperforms structure-agnostic baselines, often by a substantial margin."> Abstract</a>
+                       <a href="https://openreview.net/forum?id=ONpyYavBqR" class="btn btn-default">OpenReview </a>
+                   </div>
+            </div><!-- end of row -->
+
+            <!-- HistoGraph -->
+               <div class="row" id="templatemo_publications_HistoGraph">
+                   <div class="col-md-1"></div>
+                   <div class="col-md-5 col-sm-7 col-xs-24">
+                       <img src="projects/HistoGraph/rep.png" width="450" " alt="">
+                   </div>
+                   <div class="col-md-1"></div>
+                   <div class="col-md-16">
+                       <h2>Learning from Historical Activations in Graph Neural Networks</h2>
+                       <p>
+                         Yaniv Galron, Hadar Sinai, Haggai Maron, Moshe Eliasof <br>
+                         <i>The Fourteenth International Conference on Learning Representations (ICLR 2026)</i> <br>
+                       <a class="btn btn-default abstract" ptitle="Graph Neural Networks (GNNs) have demonstrated remarkable success in various domains such as social networks, molecular chemistry, and more. A crucial component of GNNs is the pooling procedure, in which the node features calculated by the model are combined to form an informative final descriptor to be used for the downstream task. However, previous graph pooling schemes rely on the last GNN layer features as an input to the pooling or classifier layers, potentially under-utilizing important activations of previous layers produced during the forward pass of the model, which we regard as historical graph activations. This gap is particularly pronounced in cases where a node's representation can shift significantly over the course of many graph neural layers, and worsen by graph-specific challenges such as over-smoothing in deep architectures. To bridge this gap, we introduce HistoGraph, a novel two‑stage attention‑based final aggregation layer that first applies a unified layer-wise attention over intermediate activations, followed by node-wise attention. By modeling the evolution of node representations across layers, our HistoGraph leverages both the activation history of nodes and the graph structure to refine features used for final prediction. Empirical results on multiple graph classification benchmarks demonstrate that HistoGraph offers strong performance that consistently improves traditional techniques, with particularly strong robustness in deep GNNs."> Abstract</a>
+                       <a href="https://arxiv.org/abs/2601.01123" class="btn btn-default">Paper </a>
+                   </div>
+            </div><!-- end of row -->
 
 
 
