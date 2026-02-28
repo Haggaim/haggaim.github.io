@@ -626,7 +626,14 @@ footer a { color: rgba(255,255,255,0.75); }
   }
 
   .pub-img {
-    max-width: 120px;
+    max-width: 100%;
+    flex: none;
+  }
+
+  .pub-img img {
+    max-height: 180px;
+    width: auto;
+    max-width: 100%;
   }
 }
 
