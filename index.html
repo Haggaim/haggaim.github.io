@@ -145,7 +145,44 @@
 <section id="publications">
   <div class="container">
     <h2>Publications</h2>
+      
+     <!-- SHINE -->
+    <div class="pub-card">
+      <div class="pub-img"><img src="projects/SHINE/rep.png" alt="SHINE"></div>
+      <div class="pub-info">
+        <div class="pub-title">SHINE: A Scalable In-Context Hypernetwork for Mapping Context to LoRA in a Single Pass</div>
+        <div class="pub-authors">Yewei Liu, Xiyuan Wang, Yansheng Mao, Yoav Gelberg, Haggai Maron, Muhan Zhang</div>
+        <div class="pub-venue">International Conference on Machine Learning (ICML) 2026</div>
+        <div class="pub-links">
+          <details class="abstract-toggle"><summary>Summary</summary>
+            <div class="abstract-text">We propose SHINE (Scalable Hyper In-context NEtwork), a scalable hypernetwork that can map diverse meaningful contexts into high-quality LoRA adapters for large language models (LLM). By reusing the frozen LLM's own parameters in an in-context hypernetwork design and introducing architectural innovations, SHINE overcomes key limitations of prior hypernetworks and achieves strong expressive power with a relatively small number of parameters. We introduce a pretraining and instruction fine-tuning pipeline, and train our hypernetwork to generate high quality LoRA adapters from diverse meaningful contexts in a single forward pass. It updates LLM parameters without any fine-tuning, and immediately enables complex question answering tasks related to the context without directly accessing the context, effectively transforming in-context knowledge to in-parameter knowledge in one pass.</div>
+          </details>
+          <a href="https://arxiv.org/abs/2602.06358" class="btn">Paper</a>
+          <a href="https://github.com/Yewei-Liu/SHINE" class="btn">Code</a>
+        </div>
+      </div>
+    </div>
 
+    <!-- PEWSN -->
+    <div class="pub-card">
+      <div class="pub-img"><img src="projects/PEWSN/rep.png" alt="PEWSN"></div>
+      <div class="pub-info">
+        <div class="pub-title">On the Expressive Power of Permutation-Equivariant Weight-Space Networks</div>
+        <div class="pub-authors">Adir Dayan, Yam Eitan, Haggai Maron</div>
+        <div class="pub-venue">International Conference on Machine Learning (ICML) 2026</div>
+        <div class="pub-award">Spotlight</div>
+        <div class="pub-links">
+          <details class="abstract-toggle"><summary>Summary</summary>
+            <div class="abstract-text">Weight-space learning studies neural architectures that operate directly on the parameters of other neural networks. We develop a systematic theory for expressivity of weight-space networks. We first prove that all prominent permutation-equivariant networks are equivalent in expressive power. We then establish universality in both weight- and function-space settings under mild, natural assumptions on the input weights, and characterize the edge-case regimes where universality no longer holds. Together, these results provide a strong and unified foundation for the expressivity of weight-space networks.</div>
+          </details>
+          <a href="https://arxiv.org/abs/2602.01083" class="btn">Paper</a>
+        </div>
+      </div>
+    </div>  
+      
+      
+      
+      
     <!-- CHARM -->
     <div class="pub-card">
       <div class="pub-img"><img src="projects/CHARM/rep.png" alt="CHARM"></div>
@@ -228,6 +265,8 @@
         </div>
       </div>
     </div>
+
+   
 
     <!-- LOS / Beyond Next Token -->
     <div class="pub-card">
