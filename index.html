@@ -43,13 +43,13 @@
       <div class="about-bio">
         <h1>Haggai Maron</h1>
         <p class="about-position">
-          <strong>Assistant Professor</strong> · <a href="https://vee.technion.ac.il/">Technion, Faculty of Electrical and Computer Engineering</a><br>
+          <strong>Assistant Professor</strong> · <a href="https://ece.technion.ac.il/">Technion, Faculty of Electrical and Computer Engineering</a><br>
           Senior Research Scientist · <a href="https://research.nvidia.com/labs/par/">NVIDIA Research, Tel Aviv</a>
         </p>
         <p>
           My primary research interest is in machine learning, with a focus on deep learning for structured data. Specifically, I study how to apply deep learning techniques to sets, graphs, point clouds, surfaces, weight spaces and other mathematical objects that have an inherent symmetry structure. My goal is twofold: first, to understand and design deep learning architectures from a theoretical perspective, for example, by analyzing their expressive power; and second, to demonstrate their practical effectiveness on real-world problems involving structured data.
           I completed my Ph.D. in 2019 at the Weizmann Institute of Science under the supervision of <a href="http://www.wisdom.weizmann.ac.il/~ylipman/">Prof. Yaron Lipman</a>.
-          Recipient of the Alon Fellowship (2024) and an <a href="https://www.technion.ac.il/blog/article/%d7%94%d7%91%d7%a2%d7%aa-%d7%90%d7%9e%d7%95%d7%9f-%d7%91%d7%9e%d7%a6%d7%95%d7%99%d7%a0%d7%95%d7%aa-%d7%9e%d7%93%d7%a2%d7%99%d7%aa/">ERC Starting Grant</a> on Geometric Deep Learning for Neural Artifacts (GDLNeuralArt) (2026).
+          Recipient of the ICML 2020 Outstanding Paper Award, the Alon Fellowship (2024), the <a href="https://sites.google.com/view/israel-cs-association/%D7%A7%D7%94%D7%99%D7%9C%D7%94-%D7%90%D7%A7%D7%93%D7%9E%D7%99%D7%AA/%D7%A4%D7%A8%D7%A1%D7%99%D7%9D-%D7%95%D7%A7%D7%95%D7%9C%D7%95%D7%AA-%D7%A7%D7%95%D7%A8%D7%90%D7%99%D7%9D?authuser=0">ICSA Early Career Award</a> (2026), and an <a href="https://www.technion.ac.il/blog/article/%d7%94%d7%91%d7%a2%d7%aa-%d7%90%d7%9e%d7%95%d7%9f-%d7%91%d7%9e%d7%a6%d7%95%d7%99%d7%a0%d7%95%d7%aa-%d7%9e%d7%93%d7%a2%d7%99%d7%aa/">ERC Starting Grant</a> on Geometric Deep Learning for Neural Artifacts (GDLNeuralArt) (2026).
         </p>
         <p>
           <strong>I am looking for a postdoc</strong> to work on my ERC Starting Grant project (GDLNeuralArt). Ideal candidates have 5+ publications in top-tier ML conferences (or equivalent), strong mathematical foundations, a genuine enthusiasm for math, and solid coding skills. Experience in geometric deep learning or learning with symmetries is a plus. If interested, please reach out by email.
@@ -95,6 +95,7 @@
       <div class="sub-card">
         <h3>News</h3>
         <ul class="news-list">
+          <li>Recipient of the <a href="https://sites.google.com/view/israel-cs-association/%D7%A7%D7%94%D7%99%D7%9C%D7%94-%D7%90%D7%A7%D7%93%D7%9E%D7%99%D7%AA/%D7%A4%D7%A8%D7%A1%D7%99%D7%9D-%D7%95%D7%A7%D7%95%D7%9C%D7%95%D7%AA-%D7%A7%D7%95%D7%A8%D7%90%D7%99%D7%9D?authuser=0">ICSA Early Career Award</a> (2026).</li>
           <li>Recipient of an <a href="https://www.technion.ac.il/blog/article/%d7%94%d7%91%d7%a2%d7%aa-%d7%90%d7%9e%d7%95%d7%9f-%d7%91%d7%9e%d7%a6%d7%95%d7%99%d7%a0%d7%95%d7%aa-%d7%9e%d7%93%d7%a2%d7%99%d7%aa/">ERC Starting Grant</a> on Geometric Deep Learning for Neural Artifacts (GDLNeuralArt).</li>
           <li>Our <a href="https://artifactsasdata.org/">Neural Artifacts: A New Data Modality</a> workshop was accepted to NeurIPS 2026.</li>
           <li>Technion article on our work on <a href="https://www.technion.ac.il/en/blog/article/technion-researchers-develop-an-innovative-approach-for-identifying-limitations-and-hallucinations-in-artificial-intelligence-models/">detecting hallucinations in LLMs</a>.</li>
@@ -150,8 +151,66 @@
 <section id="publications">
   <div class="container">
     <h2>Publications</h2>
-      
-     <!-- SHINE -->
+
+    <!-- KV-CAT -->
+    <div class="pub-card">
+      <div class="pub-img"><img src="projects/KVCAT/rep.png" alt="KV-CAT"></div>
+      <div class="pub-info">
+        <div class="pub-title">Training Transformers for KV Cache Compressibility</div>
+        <div class="pub-authors">Yoav Gelberg, Yam Eitan, Michael Bronstein, Yarin Gal, Haggai Maron</div>
+        <div class="pub-venue">40th Annual Conference on Neural Information Processing Systems (NeurIPS 2026)</div>
+        <div class="pub-links">
+          <details class="abstract-toggle"><summary>Summary</summary>
+            <div class="abstract-text">Long-context language models are constrained by the KV cache, whose memory and access costs grow linearly with prefix length. Existing compression methods are applied post-training, so they are limited by how compressible the model's internal representations already are. We formalize KV compressibility as a property of the learned representations and show that almost any sequence-to-vector function can be implemented by both highly compressible and non-compressible transformers. We propose KV-Compression Aware Training (KV-CAT), a continued pretraining method that uses a train-time sparsification policy to mask KV slots, pushing the model to learn representations that compress well. KV-CAT improves the quality-budget tradeoff of downstream compression methods on retrieval, long-context QA, and perplexity evaluation.</div>
+          </details>
+          <a href="https://arxiv.org/abs/2605.05971" class="btn">Paper</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PE-Equiv -->
+    <div class="pub-card">
+      <div class="pub-img"><img src="projects/PE_Equiv/rep.png" alt="PE-Equiv"></div>
+      <div class="pub-info">
+        <div class="pub-title">Positional Encoding Is All You Need For Scalable Equivariance Constraint Relaxation</div>
+        <div class="pub-authors">Hagay Michaeli, Haggai Maron, Daniel Soudry</div>
+        <div class="pub-venue">40th Annual Conference on Neural Information Processing Systems (NeurIPS 2026)</div>
+        <div class="pub-links">
+        </div>
+      </div>
+    </div>
+
+    <!-- WSL-Bench -->
+    <div class="pub-card">
+      <div class="pub-img"><img src="projects/WSL_Bench/rep.png" alt="WSL-Bench"></div>
+      <div class="pub-info">
+        <div class="pub-title">Weight Space Learning needs to unify benchmarking! A taxonomy of evaluation practices</div>
+        <div class="pub-authors">Tobias Ettling, Damian Falk, Aron Asefaw, Léo Meynent, Konstantinos Tzevelekakis, Zehong Wang, Kai Wang, Boris Knyazev, Haggai Maron, Damian Borth</div>
+        <div class="pub-venue">40th Annual Conference on Neural Information Processing Systems (NeurIPS 2026)</div>
+        <div class="pub-award">Position Paper</div>
+        <div class="pub-links">
+        </div>
+      </div>
+    </div>
+
+    <!-- LoRWeB -->
+    <div class="pub-card">
+      <div class="pub-img"><img src="projects/LoRWeB/rep.png" alt="LoRWeB"></div>
+      <div class="pub-info">
+        <div class="pub-title">Spanning the Visual Analogy Space with a Weight Basis of LoRAs</div>
+        <div class="pub-authors">Hila Manor, Rinon Gal, Haggai Maron, Tomer Michaeli, Gal Chechik</div>
+        <div class="pub-venue">European Conference on Computer Vision (ECCV) 2026</div>
+        <div class="pub-links">
+          <details class="abstract-toggle"><summary>Summary</summary>
+            <div class="abstract-text">Visual analogy learning lets users edit images by example: given a pair showing a transformation, the model applies the same change to a new image. Existing methods use a single LoRA module, which struggles to cover the wide variety of possible transformations. We propose LoRWeB, which uses a learnable basis of LoRAs, each capturing a different transformation, and a lightweight encoder that weights them based on the input example pair in a single inference pass. LoRWeB achieves state-of-the-art results and better generalization to unseen transformations.</div>
+          </details>
+          <a href="https://arxiv.org/abs/2602.15727" class="btn">Paper</a>
+          <a href="https://research.nvidia.com/labs/par/lorweb/" class="btn">Project Page</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SHINE -->
     <div class="pub-card">
       <div class="pub-img"><img src="projects/SHINE/rep.png" alt="SHINE"></div>
       <div class="pub-info">
@@ -183,11 +242,37 @@
           <a href="https://arxiv.org/abs/2602.01083" class="btn">Paper</a>
         </div>
       </div>
-    </div>  
-      
-      
-      
-      
+    </div>
+
+    <!-- Rewiring -->
+    <div class="pub-card">
+      <div class="pub-img"><img src="projects/Rewiring/rep.png" alt="Rewiring"></div>
+      <div class="pub-info">
+        <div class="pub-title">From Linking Homophily and Label Informativeness to Rewiring in GNNs</div>
+        <div class="pub-authors">Harel Mendelman, Haggai Maron, Ronen Talmon</div>
+        <div class="pub-venue">TMLR 2026</div>
+        <div class="pub-links">
+          <details class="abstract-toggle"><summary>Summary</summary>
+            <div class="abstract-text">Graph Neural Networks perform poorly on heterophilic graphs, where connected nodes often have different classes. We study graph rewiring for this problem, linking edge homophily, GNN embedding smoothness, and classification performance theoretically. We propose a rewiring method that increases homophily using a reference graph, with guarantees on the rewired graph's homophily. For cases without a reference graph, we build a homophilic one from node features and training labels using a label-driven diffusion approach. On 11 real-world heterophilic datasets, our method outperforms existing rewiring techniques and specialized heterophily GNNs while remaining efficient and scalable.</div>
+          </details>
+          <a href="https://arxiv.org/abs/2505.12411" class="btn">Paper</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- WSL Survey -->
+    <div class="pub-card">
+      <div class="pub-img"><img src="projects/WSL_Survey/rep.png" alt="WSL Survey"></div>
+      <div class="pub-info">
+        <div class="pub-title">A Survey of Weight Space Learning: Understanding, Representation, and Generation</div>
+        <div class="pub-authors">Xiaolong Han, Zehong Wang, Bo Zhao, Binchi Zhang, Jundong Li, Damian Borth, Rose Yu, Haggai Maron, Yanfang Ye, Lu Yin, Ferrante Neri</div>
+        <div class="pub-venue">Preprint</div>
+        <div class="pub-links">
+          <a href="https://arxiv.org/abs/2603.10090" class="btn">Paper</a>
+        </div>
+      </div>
+    </div>
+
     <!-- CHARM -->
     <div class="pub-card">
       <div class="pub-img"><img src="projects/CHARM/rep.png" alt="CHARM"></div>
@@ -270,8 +355,6 @@
         </div>
       </div>
     </div>
-
-   
 
     <!-- LOS / Beyond Next Token -->
     <div class="pub-card">
@@ -360,7 +443,7 @@
 
     <!-- HyMN -->
     <div class="pub-card">
-      <div class="pub-img"><img src="projects/Hymn/rep.png" alt="HyMN"></div>
+      <div class="pub-img"><img src="projects/HyMN/rep.png" alt="HyMN"></div>
       <div class="pub-info">
         <div class="pub-title">Balancing Efficiency and Expressiveness: Subgraph GNNs with Walk-Based Centrality</div>
         <div class="pub-authors">Joshua Southern*, Yam Eitan, Guy Bar-Shalom, Michael Bronstein, Haggai Maron, Fabrizio Frasca*</div>
